@@ -1033,6 +1033,12 @@ Home Section style
     line-height: 6.5rem;
 }
 
+.home_text p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
 
 
 /*
@@ -1516,16 +1522,17 @@ Pricing Section style
 /*
 Brand Section style
 =====================*/
+.cbrand_item
+
 .main_cbrand{
     overflow: hidden;
     width:100%;
 }
 .cbrand_item {
-    height: 70px;
-    overflow: hidden;
+    height: 100px;
 }
 .cbrand_item img{
-    width:70%;
+    width:100%;
     /*margin: 10px;*/
 }
 .cbrand_item img.img_apple{

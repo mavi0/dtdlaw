@@ -50,6 +50,19 @@ Author URI: http://www.xpeedstudio.com
 
 /* Landscape phones and portrait tablets */
 @media  (max-width: 768px) {
+    .main_home {
+        padding-top: 150px;
+        padding-left: 10px;
+    }
+    .home_text h1 {
+        font-size: 3.5rem;
+    }
+    .home_text p{
+        font-size: 2.5rem;
+    } 
+    .mobile-hide {
+        display: none;
+    } 
     h2{
         font-size:2rem;
     }
