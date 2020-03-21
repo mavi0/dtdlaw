@@ -1536,9 +1536,9 @@ Brand Section style
 }
 
 .cbrand_content {
-    display: inline;
-    float: none;
-    width: 50%;
+    /* display: inline;
+    float: none; */
+    width: 70%;
 }
 
 /* .cbrand_item img{
