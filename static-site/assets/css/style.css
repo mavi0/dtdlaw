@@ -1522,7 +1522,10 @@ Pricing Section style
 /*
 Brand Section style
 =====================*/
-.cbrand_item
+
+.main_blog, .roomy-100 {
+    /* padding-bottom: 0px; */
+}
 
 .main_cbrand{
     overflow: hidden;
@@ -1531,10 +1534,17 @@ Brand Section style
 .cbrand_item {
     height: 100px;
 }
-.cbrand_item img{
+
+.cbrand_content {
+    display: inline;
+    float: none;
+    width: 50%;
+}
+
+/* .cbrand_item img{
     width:100%;
     /*margin: 10px;*/
-}
+
 .cbrand_item img.img_apple{
     width:25%;
     padding: 10px;
