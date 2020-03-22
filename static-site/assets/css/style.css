@@ -57,6 +57,14 @@ body {
 .page-content, 
 section { overflow: hidden; }*/
 
+.mobile-hide {
+    display: block;
+} 
+
+.mobile-show{
+    display: none;
+}
+
 /*
     On Scroll Animations 
 ------------------------------------------*/
@@ -67,6 +75,14 @@ section { overflow: hidden; }*/
 /*
     Spacing & Alignment 
 ------------------------------------------*/
+
+.roomy-bottom-100{
+    padding-bottom: 100px;
+}
+
+.roomy-top-100{
+    padding-top: 100px;
+}
 
 .roomy-100 {
     padding-top: 100px;
@@ -1616,11 +1632,18 @@ Maps Section style
 =====================*/
 
 .main_maps{
-    background: url(../images/maps.jpg) no-repeat center center;
     position: relative;
-    width:100%;
+    width:70%;
     overflow: hidden;
 }
+
+.main_maps_pen{
+    background: url(../images/pen.jpg) no-repeat center center;
+}
+.main_maps_caer{
+    background: url(../images/caer.jpg) no-repeat center center;
+}
+
 
 .maps_text{
     position: relative;
@@ -1694,8 +1717,9 @@ Footer Section style
 
 /*maps*/
 .main_maps{
-    width:100%;
+    width: 100%;
     height: 100%;
+    margin-top: 20px;
 }
 .main_maps .map_canvas_icon{
     position:absolute;

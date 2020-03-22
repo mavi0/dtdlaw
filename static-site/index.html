@@ -716,26 +716,15 @@
         </section>
         <!--End off Pricing section -->
 
-        <!--Maps Section-->
-        <div class="main_maps text-center fix">
-            <div class="overlay"></div>
-            <div class="maps_text">
-                <h3 class="text-white" onclick="showmap()">FIND US ON THE MAP <i class="fa fa-angle-down"></i></h3>
-                <div id="map_canvas" class="mapheight"></div>
-            </div>
-        </div><!-- End off Maps Section-->
-
-
-
         <!--Contact Us Section-->
         <section id="contact" class="contact bg-mega fix">
             <div class="container">
                 <div class="row">
-                    <div class="main_contact roomy-100 text-white">
+                    <div class="main_contact roomy-top-100 text-white">
                         <div class="col-md-4">
                             <div class="rage_widget">
                                 <div class="widget_head">
-                                    <h3 class="text-white">RAGE</h3>
+                                    <h3 class="text-white">Contact Us</h3>
                                     <div class="separator_small"></div>
                                 </div>
                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -746,11 +735,11 @@
 
                                 <div class="widget_socail m-top-30">
                                     <ul class="list-inline">
-                                        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href=""><i class="fa fa-vimeo"></i></a></li>
-                                        <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href=""><i class="fa icofont icofont-facebook"></i></a></li>
+                                        <li><a href=""><i class="fa icofont icofont-brand-whatsapp"></i></a></li>
+                                        <li><a href=""><i class="fa icofont icofont-linkedin"></i></a></li>
+                                        <li><a href=""><i class="fa icofont icofont-google-map"></i></a></li>
+                                        <li><a href=""><i class="fa icofont icofont-brand-google"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -772,6 +761,15 @@
                                         </div>
                                     </div>
 
+
+                                    <div class="col-sm-12">
+                                        <div class="form-group">
+                                            <input id="email" name="email" type="text" placeholder="Email"
+                                                class="form-control">
+                                        </div>
+                                    </div>
+                                   
+
                                     <div class="col-sm-12">
                                         <div class="form-group">
                                             <textarea class="form-control" rows="6" placeholder="Message"></textarea>
@@ -784,6 +782,43 @@
                                 </div>
 
                             </form>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="main_contact roomy-bottom-100 text-white">
+                        <div class="col-md-6 roomy-top-100">
+                            <div class="rage_widget">
+                                <div class="widget_head">
+                                    <h3 class="text-white">Caernarfon Office</h3>
+                                    <div class="separator_small"></div>
+                                </div>
+                                <p>36 Y Maes, Caernarfon, Gwynedd, LL55 2NN</p>
+                            </div>
+                            <div class="main_maps main_maps_caer text-center">
+                                <div class="overlay"></div>
+                                <div class="maps_text">
+                                    <h3 class="text-white" onclick="showmap()">Caernarfon <i class="fa fa-angle-down"></i></h3>
+                                    <div id="map_canvas" class="mapheight"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 roomy-top-100">
+                            <div class="rage_widget">
+                                <div class="widget_head">
+                                    <h3 class="text-white">Penmaenmawr Office</h3>
+                                    <div class="separator_small"></div>
+                                </div>
+                                <p>5 Bank Buildings, Penmaenmawr, Conwy, LL34 6BY</p>
+                            </div>
+                            <div class="main_maps main_maps_pen text-center">
+                                <div class="overlay"></div>
+                                <div class="maps_text">
+                                    <h3 class="text-white" onclick="showmap()">Penmaenmawr <i class="fa fa-angle-down"></i></h3>
+                                    <div id="map_canvas" class="mapheight"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -823,43 +858,6 @@
             <!--End off container -->
         </section><!-- End off Blog section-->
 
-
-
-        <!--Subscribe section-->
-        <section id="subscribe" class="subscribe roomy-100 fix">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="main_subscribe text-center">
-                        <div class="col-sm-8 col-sm-offset-2">
-                            <h2 class="text-white">SUBSCRIBE US</h2>
-                            <p class="m-top-30 text-white">At vero eos et accusamus et iusto odio dignissimos
-                                ducimus qui blanditiis praesentium</p>
-                        </div>
-                        <div class="col-sm-10 col-sm-offset-1">
-                            <div class="subscribe_btns m-top-40">
-
-                                <form class="form-inline">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" id="inputEmail2"
-                                            placeholder="Email Address">
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">SUBSCRIBE</button>
-                                </form>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!--End off row -->
-            </div>
-            <!--End off container -->
-        </section><!-- End off Impress section-->
-
-
-
-
-
         <!-- scroll up-->
         <div class="scrollup">
             <a href="#"><i class="fa fa-chevron-up"></i></a>
@@ -869,14 +867,31 @@
         <footer id="footer" class="footer bg-black">
             <div class="container">
                 <div class="row">
-                    <div class="main_footer text-center p-top-40 p-bottom-30">
+                    <div class="main_footer text-center p-top-40 p-bottom-30 mobile-show">
                         <p class="wow fadeInRight" data-wow-duration="1s">
                             Made with
                             <i class="fa fa-heart"></i>
                             by
-                            <a target="_blank" href="https://github.com/mavi0/dtdlaw">Eleanor Davies</a>
-                            2020. All Rights Reserved
+                            <a target="_blank" href="https://github.com/mavi0/">Eleanor Davies</a>
+                            2020.
                         </p>
+                        <p class="wow fadeInLeft" data-wow-duration="1s">
+                            View <a target="_blank" href="https://github.com/mavi0/dtdlaw">site source</a> and our  
+                            <a target="_blank" href="privacy_policy.pdf">Privacy Policy</a>
+                        </p>
+                        
+                    </div>
+                    <div class="main_footer text-center p-top-40 p-bottom-30 mobile-hide">
+                        <p class="wow fadeInRight" data-wow-duration="1s">
+                            Made with
+                            <i class="fa fa-heart"></i>
+                            by
+                            <a target="_blank" href="https://github.com/mavi0/">Eleanor Davies</a>
+                            2020.
+                            View <a target="_blank" href="https://github.com/mavi0/dtdlaw">site source</a> and our  
+                            <a target="_blank" href="privacy_policy.pdf">Privacy Policy</a>
+                        </p>
+                        
                     </div>
                 </div>
             </div>
