@@ -434,6 +434,19 @@ Button
     color:#ff6863;
 }
 
+.btn-secondary{
+    color: #fff;
+    background-color: #ff6863;
+    border:1px solid;
+    border-color: #ff6863;
+    padding: 1rem 2rem;
+}
+.btn-secondary:hover{
+    background-color: #eee;
+    border-color: #eee;
+    color:#ff6863;
+}
+
 .btn-success{}
 .btn-info{}
 .btn-warning{}
