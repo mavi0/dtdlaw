@@ -114,6 +114,9 @@ section { overflow: hidden; }*/
     padding-bottom: 40px;
 }
 
+.ico-padding {
+    padding-right: 7px;
+}
 
 /*text color*/
 

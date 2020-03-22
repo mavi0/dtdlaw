@@ -191,6 +191,7 @@
                         <div class="home_btns m-top-40">
                             <a href="tel:+441286675715" target="_blank" class="btn btn-primary m-top-20"><i
                                     class="fas fa-phone"></i> 01286 675715</a>
+                            <a href="https://wa.me/441286675715" class="btn btn-default m-top-20"><i class="fa icofont icofont-brand-whatsapp"></i> WHATSAPP</a>
                             <!-- <a href="https://bootstrapthemes.co" target="_blank" class="btn btn-default m-top-20"><i class="far fa-envelope"></i> office@dtdlaw.co.uk</a> -->
                         </div>
 
@@ -227,7 +228,10 @@
                                 <div class="about_btns m-top-40">
                                     <a href="tel:+441286675715" target="_blank" class="btn-primary"><i
                                             class="fas fa-phone"></i> 01286 675715</a>
+                                            <a href="https://wa.me/441286675715"  class="btn-primary"><i class="fa icofont icofont-brand-whatsapp"></i> WHATSAPP</a>
+
                                 </div>
+                                
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -312,7 +316,8 @@
 
                             <div class="impress_btns m-top-30">
                                 <a href="" class="btn btn-primary m-top-20">Office: 01286 675 715</a>
-                                <a href="" class="btn btn-default m-top-20">Out of Hours: 07754 715 113</a>
+                                <a href="https://wa.me/441286675715"  class="btn btn-primary m-top-20"><i class="fa icofont icofont-brand-whatsapp"></i> WHATSAPP</a>
+                                <a href="" class="btn btn-default m-top-20"><i class="icofont-moon ico-padding"></i>  Out of Hours: 07754 715 113</a>
                             </div>
                         </div>
                     </div>
@@ -921,11 +926,11 @@
     <script src="assets/js/gmaps.min.js"></script>
 
     <script>
-        function showmap() {
+        function showmap(coord) {
             var mapOptions = {
                 zoom: 8,
                 scrollwheel: false,
-                center: new google.maps.LatLng(-34.397, 150.644),
+                center: new google.maps.LatLng(53.1391792,-4.2751779),
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             };
             var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
