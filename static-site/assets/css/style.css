@@ -456,7 +456,7 @@ Button
 
 
 /*
-socail icon
+social icon
 --------------------------------*/
 /*a i.share{
     color:#1E8BC3;
@@ -1483,6 +1483,14 @@ Testimonial Section style
     color:#ffbf00;
 }
 
+.nextprevleft {
+    display: none !important;
+}
+
+.nextprevright {
+    display: none !important;
+}
+
 
 /*
 Pricing Section style
@@ -1696,8 +1704,10 @@ Contact Section style
     width:100%;
 }
 
-.widget_socail{}
-.widget_socail ul li a i{
+.widget_social{
+    font-size: 16pt;
+}
+.widget_social ul li a i{
     background-color: #434343;
     width:40px;
     height: 40px;
@@ -1711,8 +1721,12 @@ Contact Section style
     -ms-transition: all 0.4s;
     transition: all 0.4s;
 }
-.widget_socail ul li a:hover i{
+.widget_social ul li a:hover i{
     background-color: #ff6863;
+}
+
+.btn-send{
+    float: right;
 }
 
 

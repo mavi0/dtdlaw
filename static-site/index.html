@@ -228,9 +228,10 @@
                                     <div class="home_btns m-top-40">
                                         <a href="tel:+441286675715" target="_blank" class="btn btn-primary m-top-20"><i
                                                 class="fas fa-phone ico-padding"></i> 01286 675715</a>
+                                                <a href="https://wa.me/441286675715" class="btn btn-primary m-top-20"><i class="fa icofont icofont-brand-whatsapp ico-padding"></i> WHATSAPP</a>
+
                                         <!-- <a href="https://bootstrapthemes.co" target="_blank" class="btn btn-default m-top-20"><i class="far fa-envelope"></i> office@dtdlaw.co.uk</a> -->
-                                    </div>
-                                
+                                        </div>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -675,19 +676,19 @@
                                     quis nostrud exerci tation ullamcorper suscipit lobortis nisl
                                     ut aliquip ex ea commodo consequat. </p>
 
-                                <div class="widget_socail m-top-30">
+                                <div class="widget_social m-top-30">
                                     <ul class="list-inline">
-                                        <li><a href=""><i class="fa icofont icofont-facebook"></i></a></li>
-                                        <li><a href=""><i class="fa icofont icofont-brand-whatsapp"></i></a></li>
-                                        <li><a href=""><i class="fa icofont icofont-linkedin"></i></a></li>
-                                        <li><a href=""><i class="fa icofont icofont-google-map"></i></a></li>
-                                        <li><a href=""><i class="fa icofont icofont-brand-google"></i></a></li>
+                                        <li><a href="tel:+441286675715"><i class="fa icofont icofont-phone"></i></a></li>
+                                        <li><a href="https://wa.me/441286675715"><i class="fa icofont icofont-brand-whatsapp"></i></a></li>
+                                        <li><a href="https://mailhide.io/e/5h3B0"><i class="fa icofont icofont-email"></i></a></li>
+                                        <li><a href="https://goo.gl/maps/BmGV5biythUY21H9A"><i class="fa icofont icofont-google-map"></i></a></li>
+                                        <li><a href="https://goo.gl/maps/nq7DjmBKBqpg3FJJ6"><i class="fa icofont icofont-google-plus"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-8 sm-m-top-30">
-                            <form class="" action="subcribe.php">
+                            <form accept-charset="UTF-8" action="https://formspree.io/xeqzvqal" method="POST">
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group">
@@ -706,7 +707,7 @@
 
                                     <div class="col-sm-12">
                                         <div class="form-group">
-                                            <input id="email" name="email" type="text" placeholder="Email"
+                                            <input id="email" name="_replyto" type="email" placeholder="Email"
                                                 class="form-control">
                                         </div>
                                     </div>
@@ -714,10 +715,13 @@
 
                                     <div class="col-sm-12">
                                         <div class="form-group">
-                                            <textarea class="form-control" rows="6" placeholder="Message"></textarea>
+                                            <textarea name="message" class="form-control" rows="6" placeholder="Message"></textarea>
                                         </div>
-                                        <div class="form-group text-center">
-                                            <a href="" class="btn btn-primary">SEND MESSAGE</a>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group btn-send">
+                                            <!-- <a href="" >SEND MESSAGE</a> -->
+                                            <button type="submit" class="btn btn-primary ">SEND MESSAGE</button>
                                         </div>
                                     </div>
 
@@ -741,8 +745,8 @@
                             <div class="main_maps main_maps_caer text-center">
                                 <div class="overlay"></div>
                                 <div class="maps_text">
-                                    <h3 class="text-white" onclick="showmap()">Caernarfon <i class="fa fa-angle-down"></i></h3>
-                                    <div id="map_canvas" class="mapheight"></div>
+                                    <h3 class="text-white" onclick="showmap(53.1392202, -4.2752788, 'map_canvas_caer')">Caernarfon <i class="fa fa-angle-down"></i></h3>
+                                    <div id="map_canvas_caer" class="mapheight"></div>
                                 </div>
                             </div>
                         </div>
@@ -757,8 +761,8 @@
                             <div class="main_maps main_maps_pen text-center">
                                 <div class="overlay"></div>
                                 <div class="maps_text">
-                                    <h3 class="text-white" onclick="showmap()">Penmaenmawr <i class="fa fa-angle-down"></i></h3>
-                                    <div id="map_canvas" class="mapheight"></div>
+                                    <h3 class="text-white" onclick="showmap(53.2681272, -3.9230447, 'map_canvas_pen')">Penmaenmawr <i class="fa fa-angle-down"></i></h3>
+                                    <div id="map_canvas_pen" class="mapheight"></div>
                                 </div>
                             </div>
                         </div>
@@ -863,16 +867,22 @@
     <script src="assets/js/gmaps.min.js"></script>
 
     <script>
-        function showmap(coord) {
-            var mapOptions = {
-                zoom: 8,
-                scrollwheel: false,
-                center: new google.maps.LatLng(53.1391792,-4.2751779),
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            };
-            var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+        function showmap(lat, long, element) {
+            var myLatLng = {lat: lat, lng: long};
+
+            var map = new google.maps.Map(document.getElementById(element), {
+            zoom: 16,
+            center: myLatLng
+            });
+
             $('.mapheight').css('height', '350');
             $('.maps_text h3').hide();
+
+            var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Davies & Co Solicitors'
+            });
         }
 
     </script>
