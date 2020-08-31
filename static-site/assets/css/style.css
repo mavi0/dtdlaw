@@ -1809,3 +1809,14 @@ Footer Section style
     text-decoration: none;
 
 }
+
+/* Modal */
+
+.bio-list {
+    padding-left: 2em;
+}
+
+.bio-list li {
+    padding-bottom: 1em;
+    list-style: circle;
+}
