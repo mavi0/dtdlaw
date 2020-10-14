@@ -1495,10 +1495,11 @@ Testimonial Section style
 /*
 Pricing Section style
 =======================*/
-.main_blog,
-.main_pricing{
+.main_blog, .main_pricing {
     overflow: hidden;
-    width:100%;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 .pricing_top_border{
     height: 4px;
