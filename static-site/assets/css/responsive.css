@@ -57,8 +57,11 @@ Author URI: http://www.xpeedstudio.com
         display: block;
     }
     .main_home {
-        padding-top: 150px;
+        padding-top: 10px;
         padding-left: 10px;
+    }
+    .main_home img{
+        width: 80%;
     }
 
 }
