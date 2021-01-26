@@ -1851,6 +1851,10 @@ Footer Section style
     margin-right: 2%;
 }
 
+#footer a {
+    color: #c23616;
+}
+
 
 
 /*maps*/
