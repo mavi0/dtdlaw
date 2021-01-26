@@ -131,8 +131,10 @@
                     var scrollTop = $(window).scrollTop();
                     if(scrollTop >34){
                         $(".navbar-fixed").removeClass("no-background");
+                        $("#nav-logo").removeClass("hidden");
                     }else {
                         $(".navbar-fixed").addClass("no-background");
+                        $("#nav-logo").addClass("hidden");
                     }
                 });
             }
@@ -567,6 +569,7 @@
         $(".navbar-toggle").each(function(){
             $(".fa", this).removeClass("fa-times");
             $(".fa", this).addClass("fa-bars");
+            $("mobile-phone").addClass("hidden");
             $(this).removeClass("fixed");
         });        
         $(".navbar-collapse").removeClass("in");
