@@ -114,6 +114,22 @@ Author URI: http://www.xpeedstudio.com
         display: inline;
     }
 
+    #title_logo {
+        font-family: 'Roboto', sans-serif;
+        font-size: 5rem;
+        font-weight: lighter;
+        line-height: 4rem;
+
+    }
+    
+    #title_logo_sub {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.65rem;
+        font-weight: lighter;
+        line-height: 4rem;
+        letter-spacing: 0.08em;;
+    }
+
 }
 
 
