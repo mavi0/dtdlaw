@@ -8,7 +8,11 @@ Davies & Co is the trading name of Davies & Co Solicitors Limited which is autho
 
 Based on the [Rage](https://bootstrapthemes.co/item/rage-free-bootstrap-multipurpose-template/) theme from [bootstrapthemes.co](https://bootstrapthemes.co)
 
-## Pictures Used:
+## Photographs Used:
+
+At time of writing, the photographs used were obtained via Unsplasg via the [Unsplash Licence](https://unsplash.com/license). 
+
+    Unsplash grants you an irrevocable, nonexclusive, worldwide copyright license to download, copy, modify, distribute, perform, and use photos from Unsplash for free, including for commercial purposes, without permission from or attributing the photographer or Unsplash. This license does not include the right to compile photos from Unsplash to replicate a similar or competing service.
 
 [Photo by Neil Mark Thomas on Unsplash - Caernarfon Castle](https://unsplash.com/photos/HTpvyy64KSM)
 ![books][books]
