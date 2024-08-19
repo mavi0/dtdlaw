@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Modify year
         run: sed -i "s/^\( \{28\}\)[0-9]\{4\}\./\1$(date +"%Y")./g" static-site/index.html     
       - name: Commit Yearly Update 
