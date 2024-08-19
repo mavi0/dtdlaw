@@ -10,14 +10,11 @@ jobs:
     name: Scheduled Year Update
     runs-on: ubuntu-latest
     steps:
-      -
-        name: Checkout
+      - name: Checkout
         uses: actions/checkout@v3
-      - 
-        name: Modify year
-        run: sed -i "s/[[:space:]]\{2,\}[0-9]\{4\}\./$(date +"%Y")./g" static-site/index.html
-      - 
-        name: Commit Yearly Update 
+      - name: Modify year
+        run: sed -i "s/^\( \{28\}\)[0-9]\{4\}\./\1$(date +"%Y")./g" static-site/index.html     
+      - name: Commit Yearly Update 
         if: success()
         run: |-
           git config user.name actions-bot
