@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v3
       - 
         name: Modify year
-        run: sed -i "s/[[:space:]][0-9]\{4\}\./$(date +"%Y")./g" static-site/index.html
+        run: sed -i "s/[[:space:]]\{2,\}[0-9]\{4\}\./$(date +"%Y")./g" static-site/index.html
       - 
         name: Commit Yearly Update 
         if: success()
@@ -25,5 +25,8 @@ jobs:
           git add static-site/index.html
           git commit -m "chore🚀: updated year" || exit 0
           git push
+          
+    call-docker:
+      uses: ./.github/workflows/docker.yml
 
 
