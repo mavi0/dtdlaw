@@ -25,8 +25,8 @@ jobs:
           git add static-site/index.html
           git commit -m "chore🚀: updated year" || exit 0
           git push
-          
+
     call-docker:
-      uses: ./.github/workflows/docker.yml
+      uses: ./.github/workflows/docker.yaml
 
 
