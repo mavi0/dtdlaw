@@ -1,0 +1,29 @@
+name: Update Year
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 2 1 *'
+
+jobs:
+  database-update:
+    name: Scheduled Year Update
+    runs-on: ubuntu
+    steps:
+      -
+        name: Checkout
+        uses: actions/checkout@v3
+      - 
+        name: Modify year
+        run: sed -i "s/[0-9]\{4\}\./$(date +"%Y")./g" static-site/index.html
+      - 
+        name: Commit Yearly Update 
+        if: success()
+        run: |-
+          git config user.name actions-bot
+          git config user.email actions@users.noreply.github.com
+          git add static-site/index.html
+          git commit -m "chore🚀: updated year" || exit 0
+          git push
+
+
