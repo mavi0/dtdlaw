@@ -8,7 +8,7 @@ on:
 jobs:
   database-update:
     name: Scheduled Year Update
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     steps:
       -
         name: Checkout
