@@ -845,28 +845,24 @@ button.person:hover .person-role {
 /* Accreditations */
 
 .accreditations {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-items: center;
-  gap: 30px;
+  justify-content: center;
+  gap: 30px 80px;
 }
 
+/* Matches the badge image inside the iframe (275x162), so it isn't offset */
 .sra-badge {
-  width: 300px;
-  height: 220px;
+  width: 275px;
+  height: 162px;
   border: 0;
   background: transparent;
 }
 
 .accreditations img {
-  width: 300px;
-}
-
-@media (max-width: 767px) {
-  .accreditations {
-    grid-template-columns: 1fr;
-  }
+  width: auto;
+  height: 162px;
 }
 
 /* Back to top */
