@@ -6,4 +6,9 @@ updates:
       interval: "weekly"
     commit-message:
       prefix: "dep(ci): "
-      
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "dep(docker): "
