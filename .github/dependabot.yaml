@@ -6,6 +6,10 @@ updates:
       interval: "weekly"
     commit-message:
       prefix: "dep(ci): "
+    groups:
+      github-actions:
+        patterns:
+          - "*"
   - package-ecosystem: "docker"
     directory: "/"
     schedule:

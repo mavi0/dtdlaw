@@ -8,6 +8,10 @@ permissions:
   pull-requests: write
   actions: write
 
+# Merge one Dependabot PR at a time so they don't race each other
+concurrency:
+  group: dependabot-automerge
+
 jobs:
   automerge:
     name: Merge and Rebuild
