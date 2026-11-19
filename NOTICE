@@ -3,10 +3,11 @@ This repository contains three kinds of material, under different terms.
 1. Code: GNU AGPL v3
 --------------------
 
-Copyright (C) 2021 Eleanor Davies
+Copyright (C) 2021-2026 Eleanor Davies
 
 The site's code (static-site/index.html, static-site/assets/css,
-static-site/assets/js, the Dockerfile and the CI workflows) is free software:
+static-site/assets/js, the Dockerfile, and the GitHub workflows and Dependabot
+configuration in .github/) is free software:
 you can redistribute it and/or modify it under the terms of the GNU Affero
 General Public License as published by the Free Software Foundation, version 3.
 See the LICENSE file for the full text.
@@ -29,11 +30,11 @@ is not covered by the AGPL.
 The site's content is copyright (C) Davies & Co Solicitors Ltd. All rights
 reserved. This includes:
 
-- the name, logo and branding of Davies & Co Solicitors Ltd;
+- the name, logo, favicons and branding of Davies & Co Solicitors Ltd;
 - all written text on the site;
 - the PDF documents (complaints procedure, pricing, privacy policy);
-- staff photographs, office photographs, contact details, office addresses
-  and any other firm information.
+- staff photographs (static-site/assets/img/team/), contact details, office
+  addresses and any other firm information.
 
 You may not reuse this content, or publish this site or any copy of it in a
 way that presents itself as, or could be mistaken for, Davies & Co Solicitors
@@ -89,6 +90,15 @@ License (https://unsplash.com/license):
 - cta.jpg: "Bikes" by Everton Vila
 - testimonials.jpg: "Jump!" by Austin Schmid
 - pricing.jpg: "Money" by Michael Longmire
+
+Other images:
+
+- criminal-litigation.png: the Law Society Criminal Litigation Accreditation
+  mark, a trade mark of The Law Society, shown because the firm holds that
+  accreditation.
+- office-caernarfon.jpg and office-penmaenmawr.jpg: screenshots of the Google
+  Maps embed the site used before 2026. The map data belongs to Google and its
+  data providers.
 
 Services used at runtime (not included in this repository), each under its
 provider's own terms:
