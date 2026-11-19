@@ -565,6 +565,7 @@ section[id] {
 /* Team */
 
 .team {
+  --person-width: calc((100% - 90px) / 4);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -574,8 +575,7 @@ section[id] {
 .person {
   display: flex;
   flex-direction: column;
-  width: 380px;
-  max-width: 100%;
+  width: var(--person-width);
   padding: 0;
   border: 1px solid var(--line);
   background: #fff;
@@ -586,6 +586,11 @@ section[id] {
 
 button.person {
   cursor: pointer;
+}
+
+/* Side margins that fill the rest of the row, so the lead card sits alone on top */
+.person-lead {
+  margin-inline: calc((100% - var(--person-width)) / 2);
 }
 
 .person img {
@@ -619,8 +624,8 @@ button.person:hover .person-role {
 }
 
 @media (max-width: 991px) {
-  .person {
-    width: calc(50% - 15px);
+  .team {
+    --person-width: calc(50% - 15px);
   }
 
   .person-text {
@@ -629,8 +634,8 @@ button.person:hover .person-role {
 }
 
 @media (max-width: 479px) {
-  .person {
-    width: 100%;
+  .team {
+    --person-width: 100%;
   }
 }
 
